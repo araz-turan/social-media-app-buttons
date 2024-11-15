@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:wght@400;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(315deg, #fff, #d8e1ec);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+li {
+    list-style: none;
+    margin: 0.75rem;
+    padding: 0.5rem;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    position: relative;
+    box-shadow: 0.25rem 0.25rem #c1c1c1;
+}
+li a {
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li div {
+    opacity: 0;
+    position: absolute;
+    padding: 0.35rem;
+    border-radius: 0.5rem;
+    top: 0rem;
+    color: #fff;
+    pointer-events: none;
+    transition: all 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+li:hover div {
+    opacity: 1;
+    top: -2.45rem;
+} 
+li:hover a {
+    color: #fff;
+} 
+li div::after {
+    content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    right: 50%;
+    transform: rotate(45deg) translateX(50%);
+    bottom: 0;
+}
+.face-li:hover, .face-tool::after, .face-tool {
+    background: #395693;
+}
+.x-li:hover, .x-tool::after, .x-tool {
+    background: #000;
+}
+.x-tool::after {
+    right: 45%;
+}
+.you-li:hover, .you-tool::after, .you-tool {
+    background: #ff0000;
+}
+.twch-li:hover, .twch-tool::after, .twch-tool {
+    background: #8d44f7;
+}
+.tele-li:hover, .tele-tool::after, .tele-tool {
+    background: #25a0dd;
+}
+.gith-li:hover, .gith-tool::after, .gith-tool {
+    background: #000;
+}
